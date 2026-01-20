@@ -57,17 +57,15 @@ This line chart shows average daily difference in profit by month.
 ## KPI Cards
 
 ### Profitability Indicator by Market 
-
-This card presents the profitability indicator comparing the **spot market** and the **secondary market**. The indicator is defined as:
-\[ \pi = \big( P_{\text{sale}} - P_{\text{bid}}^{MC} \big) \cdot \text{Generation} \] 
+This card presents the profitability indicator comparing the **spot market** and the **secondary market**. The indicator is defined as: 
+$$ \pi = \big( P_{\text{sale}} - P_{\text{bid}}^{MC} \big) \cdot \text{Generation} $$ 
 
 **Assumptions:** 
-- The **offer price** (\(P_{\text{bid}}^{MC}\)) is assumed to be equal to the **marginal cost**, given the competitive nature of the market. 
-- \(P_{\text{sale}}\) represents the spot market price or secondary market price (COP/kWh). 
-- **Generation** is measured in kWh.
-- The result \(\pi\) is expressed in COP, representing the potential gain from participating in the spot market relative to the secondary market.
--
-### Profitability by Plant Type (Energy Source) 
+- The **offer price** ($P_{\text{bid}}^{MC}$) is assumed to be equal to the **marginal cost**, given the competitive nature of the market.
+- $P_{\text{sale}}$ represents the spot market price or secondary market price (COP/kWh).
+- **Generation** is measured in kWh. - The result $\pi$ is expressed in COP, representing the potential gain from participating in the spot market relative to the secondary market.
+
+### Profitability by Plant Type (Energy Source)
 This card shows which types of plants (e.g., hydro, thermal) benefit the most from participating in the secondary market. By applying the profitability indicator across different plant sources, we can identify which technologies capture higher margins and whether incentives exist to favor the secondary market over the spot market.
 
 ![KPI 1](Images/KPI-Profits.png)
@@ -79,7 +77,7 @@ To ensure the tool is easy to use and free from erroneous user manipulations, sl
 
 
 ## Formulas and Functions
-### Dashboard Formulas and Functions
+### Data Exploration Formulas and Functions
 
 
 ## Key Insights
