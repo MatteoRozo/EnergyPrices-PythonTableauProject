@@ -80,16 +80,51 @@ To ensure the tool is easy to use and free from erroneous user manipulations, sl
 
 
 ## Formulas and Functions
-### Data Exploration Formulas and Functions
+## Data Processing Methods (Python) 
+
+
+1. **Iterative Reshaping (Melt – Pandas)**  
+   Formula:  
+   `for df, name in zip(dfs, names): df_long = df.melt(id_vars=id_vars, value_vars=hour_cols, var_name="Hour", value_name="Value")`  
+   Description:  
+   Iterative transformation of multiple DataFrames from wide to long format, standardizing hourly columns into a normalized structure for time-based analysis.
+
+2. **Merge – Pandas**  
+   Formula:  
+   `plant_info = bid_price_reshape.merge(source_descrip_clean, on=["Plant"], how="inner").merge(generation_reshape, on=["Date","Hour","Plant"], how="inner")`  
+   Description:  
+   Integration of bid prices, plant characteristics, and generation data using common keys to build a consolidated operational dataset.
+
+3. **Sort and Filter**  
+   Formula:  
+   `plantmarket_info_filtered = plantmarket_info[plantmarket_info["PlantDispType"]=="DESPACHADO CENTRALMENTE"].sort_values(by=["Plant","Date","Hour"])`  
+   Description:  
+   Filtering of centrally dispatched plants and chronological ordering by plant and hour for structured analysis.
+
+4. **Variable Creation**  
+   Formula:  
+   `profit = (market_price - bid_price) * generation`  
+   Description:  
+   Creation of derived profitability variables for spot and secondary markets based on price differentials and actual generation.
+
+5. **Exportation**  
+   Formula:  
+   `plantmarket_info_filtered.to_excel("plantprofit_info.xlsx", index=False)`  
+   Description:  
+   Export of processed datasets to Excel files for reporting, visualization, and external analysis.
 
 
 ## Key Insights
 
-- Without discounts on purchases and using **flexible** payment methods (cash or digital wallet), Walmart consumers with median/low loyalty levels (silver/bronze) tend to be the highest spenders. When banked payment methods are introduced, consumers with higher loyalty (platinum/gold) tend to spend more.
+- During the first months of the year, **spot market prices were consistently higher than secondary market prices**. However, as prices declined over time, both markets began to **converge**, showing much smaller differences toward the later months.
 
-- At different levels of disaggregation, promotions with percentage discounts attract the most consumer spending, almost doubling the amounts observed in BOGO-type promotions.
+- From an **hourly analysis**, plants that operate mainly during **off-peak hours** (valley/off-peak hours: periods of low system demand, typically late night and early morning) are the ones that **benefit the most from relatively higher secondary market prices**, compared to the spot market.
 
-- Discounts appear to have a greater effect on lower-loyalty customers when paying with cash or digital wallets. However, when analyzing those using banked payment methods, there is a spending gap between high-loyalty and low-loyalty consumers.
+- Although the differences are not large, **solar and hydro plants are the most favored by participation in the secondary market**, since their generation profiles align better with off-peak and mid-load hours. In contrast, **thermal plants**, which usually operate during **peak hours** (peak hours: periods of highest system demand, commonly in the late afternoon and evening), tend to benefit more from the **higher prices of the spot market**.
+
+- Since the **secondary market price is defined on a daily basis rather than hourly**, different plant technologies are **not able to fully exploit the positive price differential during off-peak hours**, because the **high revenues earned in peak hours in the spot market compensate and dominate overall profitability**.
+
+- For this reason, **thermal plants that do not typically operate during the afternoon peak** are among the few technologies for which **selling energy in the secondary market could represent a viable strategic alternative**, as they are less exposed to the high spot-price advantage observed in peak hours.
 
 ## Additional Dashboard
 
