@@ -35,12 +35,20 @@ Since this exercise was not focused on modifying the original dataset, no **miss
 
 ## Graphs
 
-### Loyalty Level Expenditure - Bar Chart  
+### Hourly Prices - Line Chart  
+This bar chart shows median expenditure by loyalty level.
+
+### Daily Difference in Prices - Line Chart  
+This bar chart shows median expenditure by loyalty level.
+
+### Hourly Profit - Line Chart  
+This bar chart shows median expenditure by loyalty level.
+
+### Daily Difference in Prices - Line Chart  
 This bar chart shows median expenditure by loyalty level.
 
 
-
-## KPI Cards 
+## KPI Cards
 
 ### Profitability Indicator by Market 
 
