@@ -1,7 +1,6 @@
-# Colombian Energy Market - Stock vs Secondary Market Dashboard
+# Colombian Energy Market - Stock vs Secondary Market Dashboards
 
 ![Dash GIF](Images/DashboardIntro.gif)
-![Example 1](Images/Graph-Dashboard1.png)
 
 ## Introduction
 This Energy Market Price Analysis Tableau dashboard was developed to understand how the spot market prices and secondary market prices in Colombia have evolved, and to evaluate whether there are potential gains from participating in either of the two markets.
@@ -36,19 +35,24 @@ Since this exercise was not focused on modifying the original dataset, no **miss
 ## Graphs
 
 ### Hourly Prices - Line Chart  
-This bar chart shows median expenditure by loyalty level.
+This line chart shows hourly prices by market type and month.
 
-
+![Detail 1](Images/Graph-HourlyPrices.png)
 
 ### Daily Difference in Prices - Line Chart  
-This bar chart shows median expenditure by loyalty level.
+This line chart shows average daily difference in price by month.
+
+![Detail 2](Images/Graph-DailyDifference.png)
 
 ### Hourly Profit - Line Chart  
-This bar chart shows median expenditure by loyalty level.
+This line chart shows hourly profits by plant type and month.
 
-### Daily Difference in Prices - Line Chart  
-This bar chart shows median expenditure by loyalty level.
+![Detail 3](Images/Graph-HourlyProfits.png)
 
+### Daily Difference in Profit - Line Chart  
+This line chart shows average daily difference in profit by month.
+
+![Detail 4](Images/Graph-DailyDifferenceProfit.png)
 
 ## KPI Cards
 
@@ -65,6 +69,8 @@ This card presents the profitability indicator comparing the **spot market** and
 -
 ### Profitability by Plant Type (Energy Source) 
 This card shows which types of plants (e.g., hydro, thermal) benefit the most from participating in the secondary market. By applying the profitability indicator across different plant sources, we can identify which technologies capture higher margins and whether incentives exist to favor the secondary market over the spot market.
+
+![KPI 1](Images/KPI-Profits.png)
 
 ## Widgets and Others
 
@@ -84,4 +90,6 @@ To ensure the tool is easy to use and free from erroneous user manipulations, sl
 
 - Discounts appear to have a greater effect on lower-loyalty customers when paying with cash or digital wallets. However, when analyzing those using banked payment methods, there is a spending gap between high-loyalty and low-loyalty consumers.
 
+## Additional Dashboard
 
+![Example 1](Images/Graph-Dashboard1.png)
