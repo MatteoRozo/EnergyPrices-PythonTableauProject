@@ -1,6 +1,7 @@
 # Colombian Energy Market - Stock vs Secondary Market Dashboard
 
 ![Dash GIF](Images/DashboardIntro.gif)
+![Example 1](Images/Graph-Dashboard1.png)
 
 ## Introduction
 This Energy Market Price Analysis Tableau dashboard was developed to understand how the spot market prices and secondary market prices in Colombia have evolved, and to evaluate whether there are potential gains from participating in either of the two markets.
@@ -31,12 +32,13 @@ The first step involved exploring the database using Python, as documented in th
 The second step was to conduct trend analysis and present the results through **Tableau dashboards**. Tableau was used to generate interactive visualizations that allowed for a clearer understanding of how **spot market prices** and **secondary market prices** evolved over time, as well as how **profitability indicators** behaved across different plant types.  
 
 Since this exercise was not focused on modifying the original dataset, no **missing values** or **complex data typologies** were introduced.
-👉 This version is ready for your README or 
 
 ## Graphs
 
 ### Hourly Prices - Line Chart  
 This bar chart shows median expenditure by loyalty level.
+
+
 
 ### Daily Difference in Prices - Line Chart  
 This bar chart shows median expenditure by loyalty level.
