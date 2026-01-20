@@ -57,8 +57,11 @@ This line chart shows average daily difference in profit by month.
 ## KPI Cards
 
 ### Profitability Indicator by Market 
-This card presents the profitability indicator comparing the **spot market** and the **secondary market**. The indicator is defined as: 
-$$ \pi = \big( P_{\text{sale}} - P_{\text{bid}}^{MC} \big) \cdot \text{Generation} $$ 
+This card presents the profitability indicator comparing the **spot market** and the **secondary market**. The indicator is defined as:
+
+$$ 
+\pi = \big( P_{\text{sale}} - P_{\text{bid}}^{MC} \big) \cdot \text{Generation} 
+$$ 
 
 **Assumptions:** 
 - The **offer price** ($P_{\text{bid}}^{MC}$) is assumed to be equal to the **marginal cost**, given the competitive nature of the market.
